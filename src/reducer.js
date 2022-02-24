@@ -4,6 +4,7 @@ export const initialState = {
   playlists: [],
   playing: false,
   item: null,
+  Playlistname: "Daily Mix 1",
   song: {
     preview_url:
       "https://p.scdn.co/mp3-preview/a6436224a4b9d0e56b70fb575a830768c22dd748?cid=e2e41c8d6bb1493aafdf90e15fb98a8a",
@@ -38,6 +39,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         song: action.song,
+      };
+    case "SET_NAME":
+      return {
+        ...state,
+        Playlistname: action.Playlistname,
       };
     default:
       return state;
