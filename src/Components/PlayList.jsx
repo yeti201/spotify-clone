@@ -1,16 +1,12 @@
 import React from "react";
-import "./Body.css";
-import Header from "./Header";
-import { useDataLayerValue } from "./DataLayer";
-import { PlayCircleFilled, Favorite, MoreHoriz } from "@material-ui/icons";
+import { useDataLayerValue } from "../DataLayer";
 import SongRow from "./SongRow";
+import { PlayCircleFilled, Favorite, MoreHoriz } from "@material-ui/icons";
 
-function Body({ spotify }) {
+export default function PlayList() {
   const [{ discover_weekly, Playlistname }, dispatch] = useDataLayerValue();
-
   return (
-    <div className="body">
-      <Header spotify={spotify} />
+    <>
       <div className="body__info">
         <img src={discover_weekly?.images[0]?.url} alt="" />
         <div className="body__infoText">
@@ -26,11 +22,9 @@ function Body({ spotify }) {
           <MoreHoriz />
         </div>
         {discover_weekly?.tracks.items.map((item) => (
-          <SongRow track={item.track} key={item.id} />
+          <SongRow track={item.track} key={item.url} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
-
-export default Body;

@@ -3,6 +3,9 @@ export const initialState = {
   token: null,
   playlists: [],
   playing: false,
+  Recent: [],
+  Albums: [],
+  Page: "Home",
   item: null,
   Playlistname: "Daily Mix 1",
   song: {
@@ -44,6 +47,21 @@ const reducer = (state, action) => {
       return {
         ...state,
         Playlistname: action.Playlistname,
+      };
+    case "SET_PAGE":
+      return {
+        ...state,
+        Page: action.Page,
+      };
+    case "SET_RECENT":
+      return {
+        ...state,
+        Recent: action.Recent,
+      };
+    case "SET_AlBUMS":
+      return {
+        ...state,
+        Albums: action.Albums,
       };
     default:
       return state;
