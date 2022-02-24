@@ -1,6 +1,6 @@
 import React from "react";
-import "./SongRow.css";
-import { useDataLayerValue } from "./DataLayer";
+import "../Style/SongRow.css";
+import { useDataLayerValue } from "../DataLayer";
 
 function SongRow({ track }) {
   const [{}, dispatch] = useDataLayerValue();

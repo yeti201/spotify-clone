@@ -1,16 +1,21 @@
 import React from "react";
-import "./SidebarOption.css";
+import "../Style/SidebarOption.css";
 import SpotifyWebApi from "spotify-web-api-js";
-import { useDataLayerValue } from "./DataLayer";
+import { useDataLayerValue } from "../DataLayer";
 
 const spotify = new SpotifyWebApi();
 
-function SidebarOption({ title, Icon, getP }) {
-  const [{}, dispatch] = useDataLayerValue();
+function SidebarOption({ title, Icon, getP, setpage }) {
+  const [{ user }, dispatch] = useDataLayerValue();
   const getplaylist = (id, Playlistname) => {
     dispatch({
+      type: "SET_PAGE",
+      Page: "MyPlaylist",
+    });
+
+    dispatch({
       type: "SET_NAME",
-      Playlistname,
+      Playlistname: Playlistname,
     });
 
     spotify.getPlaylist(id).then((playlist) => {
@@ -28,7 +33,6 @@ function SidebarOption({ title, Icon, getP }) {
         getplaylist(getP.id, getP.name);
       }}
     >
-      {Icon && <Icon className="sidebarOption__icon" />}
       {Icon ? <h4>{title}</h4> : <p>{title}</p>}
     </div>
   );

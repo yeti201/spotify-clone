@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import Login from "./Login";
+import React, { useEffect } from "react";
+import Login from "./Components/Login";
 import "./App.css";
 import { getTokenFromUrl } from "./spotify";
 import SpotifyWebApi from "spotify-web-api-js";
-import Player from "./Player";
+import Player from "./Components/Player";
 import { useDataLayerValue } from "./DataLayer";
 
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [{ user, token }, dispatch] = useDataLayerValue();
+  const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -33,7 +33,14 @@ function App() {
           playlists,
         });
       });
-      spotify.getAlbum("5U4W9E5WsYb2jUQWePT8Xm").then((data) => {
+
+      spotify.getMyRecentlyPlayedTracks({ limit: 5 }).then(({ items }) => {
+        dispatch({
+          type: "SET_RECENT",
+          Recent: items,
+        });
+      });
+      spotify.getNewReleases({ limit: 5 }).then((data) => {
         console.log(data);
       });
       spotify.getPlaylist("37i9dQZF1E34Ucml4HHx1w").then((playlist) => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Footer.css";
+import "../Style/Footer.css";
 import {
   PlayCircleOutline,
   SkipPrevious,
@@ -11,7 +11,6 @@ import {
   PauseCircleOutline,
 } from "@material-ui/icons";
 import { Grid, Slider } from "@material-ui/core";
-import { useDataLayerValue } from "./DataLayer";
 
 function Footer({ song }) {
   const [audio, setAudio] = useState(new Audio(song.preview_url));
