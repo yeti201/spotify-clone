@@ -1,14 +1,13 @@
 import React from "react";
 import { useDataLayerValue } from "../DataLayer";
+import Cards from "./Cards"
 
 export default function Home() {
-  const [{ Recent }, dispatch] = useDataLayerValue();
+ 
 
   return (
     <div>
-      {Recent.map((e) => {
-        console.log("mape", e);
-      })}
+     <Cards/>
     </div>
   );
 }
