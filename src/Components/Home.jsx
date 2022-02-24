@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       {Recent.map((e) => {
-        console.log(e);
+        console.log("mape", e);
       })}
     </div>
   );
