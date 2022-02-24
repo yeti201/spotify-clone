@@ -3,10 +3,9 @@ import "./SongRow.css";
 import { useDataLayerValue } from "./DataLayer";
 
 function SongRow({ track }) {
-  const [{} , dispatch] = useDataLayerValue();
+  const [{}, dispatch] = useDataLayerValue();
 
   const geturl = (track) => {
-     
     let song = {
       preview_url: track.preview_url,
       img: track.album.images[0].url,
