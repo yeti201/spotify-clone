@@ -32,7 +32,7 @@ function Sidebar() {
         <div className="sidebarOption" onClick={SetHomepage}>
           <SearchIcon className="sidebarOption__icon" /> <span>Search</span>
         </div>
-        <div className="sidebarOption" onClick={SetHomepage}>
+        <div className="sidebarOption"  onClick={SetHomepage}>
           <LibraryMusic className="sidebarOption__icon" />
           <span>Your Library</span>
         </div>
@@ -40,13 +40,15 @@ function Sidebar() {
       <br />
       <strong className="sidebar__title">PLAYLISTS</strong>
       <hr />
-      {playlists?.items?.map((playlist) => (
+      <div className="playlist_side" id="playlist_side"> 
+        {playlists?.items?.map((playlist) => (
         <SidebarOption
           title={playlist.name}
           key={playlist.id}
           getP={playlist}
         />
-      ))}
+      ))}</div>
+     
     </div>
   );
 }

@@ -24,3 +24,22 @@
   padding: 5px;
   font-size: 12px;
 }
+
+.playlist_side{
+  height : 65vh;
+  overflow-y: scroll;
+}
+
+.playlist_side::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+/* Track */
+.playlist_side::-webkit-scrollbar-track {
+  background: #040404;
+}
+
+/* Handle */
+.playlist_side::-webkit-scrollbar-thumb {
+  background: darkgray;
+}

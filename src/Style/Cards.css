@@ -11,7 +11,7 @@
 }
 
 .display_card{
-    width: 160px;
+    width: 13vw;
     background-color: #121212;
     padding: 1.5vw;
     box-sizing: border-box;
@@ -31,6 +31,6 @@
 }
 
 .display_card img{
-    width: 12vw;
+    width: 10vw;
     border-radius: .5vw;
 }
