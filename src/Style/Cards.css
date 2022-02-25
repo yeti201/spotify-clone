@@ -1,6 +1,6 @@
 .recent_head {
   font-size: 24px;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
   font-weight: bold;
 }
 .cards {
@@ -42,4 +42,13 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.CardMain {
+  height: 600px;
+  margin-bottom: 15%;
+}
+
+.topalbums {
+  margin-top: 2%;
 }

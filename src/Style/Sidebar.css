@@ -41,3 +41,12 @@
 .playlist_side::-webkit-scrollbar-thumb {
   background: darkgray;
 }
+
+.ative {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 35px;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+}

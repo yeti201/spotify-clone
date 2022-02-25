@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Style/Sidebar.css";
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
@@ -7,9 +7,12 @@ import { LibraryMusic } from "@material-ui/icons";
 import { useDataLayerValue } from "../DataLayer";
 
 function Sidebar() {
+  const [cla, setCla] = useState("Home");
+
   const [{ playlists }, dispatch] = useDataLayerValue();
 
-  const SetHomepage = () => {
+  const SetHomepage = (c) => {
+    setCla(c);
     let current = document.getElementsByClassName("option");
     current[0].className = current[0].className.replace("active", "");
     dispatch({
@@ -17,7 +20,7 @@ function Sidebar() {
       Page: "Home",
     });
   };
-
+  console.log(cla);
   return (
     <div className="sidebar">
       <img
@@ -28,14 +31,23 @@ function Sidebar() {
         height="39px"
       />
       <div>
-        <div className="sidebarOption option active" onClick={SetHomepage}>
+        <div
+          className={cla === "Home" ? "ative" : "sidebarOption"}
+          onClick={() => SetHomepage("Home")}
+        >
           <HomeIcon className="sidebarOption__icon" />
           <span>Home</span>
         </div>
-        <div className="sidebarOption option" onClick={SetHomepage}>
+        <div
+          className={cla === "Search" ? "ative" : "sidebarOption"}
+          onClick={() => SetHomepage("Search")}
+        >
           <SearchIcon className="sidebarOption__icon" /> <span>Search</span>
         </div>
-        <div className="sidebarOption option" onClick={SetHomepage}>
+        <div
+          className={cla === "Library" ? "ative" : "sidebarOption"}
+          onClick={() => SetHomepage("Library")}
+        >
           <LibraryMusic className="sidebarOption__icon" />
           <span>Your Library</span>
         </div>

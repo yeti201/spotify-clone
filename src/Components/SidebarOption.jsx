@@ -12,7 +12,6 @@ function SidebarOption({ title, Icon, getP, setpage }) {
       type: "SET_PAGE",
       Page: "MyPlaylist",
     });
-
     dispatch({
       type: "SET_NAME",
       Playlistname: Playlistname,

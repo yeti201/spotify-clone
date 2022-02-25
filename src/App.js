@@ -44,8 +44,11 @@ function App() {
           Recent: items,
         });
       });
-      spotify.getNewReleases({ limit: 5 }).then((data) => {
-        console.log("data", data);
+      spotify.getNewReleases({ limit: 5 }).then(({ albums }) => {
+        dispatch({
+          type: "SET_AlBUMS",
+          Albums: albums.items,
+        });
       });
       spotify.getPlaylist("37i9dQZF1E34Ucml4HHx1w").then((playlist) => {
         dispatch({

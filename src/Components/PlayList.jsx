@@ -16,10 +16,10 @@ export default function PlayList() {
         </div>
       </div>
       <div className="body__icons">
-          <PlayCircleFilled className="body__shuffle" />
-          <Favorite fontSize="large" />
-          <MoreHoriz />
-        </div>
+        <PlayCircleFilled className="body__shuffle" />
+        <Favorite fontSize="large" />
+        <MoreHoriz />
+      </div>
       <div className="body__songs">
         {discover_weekly?.tracks.items.map((item) => (
           <SongRow track={item.track} key={item.url} />
