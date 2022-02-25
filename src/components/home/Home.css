@@ -77,21 +77,25 @@
         /* text-align: center; */
         /* position: relative; */
     }
+    .home p{
+        margin: 5% 0;
+    }
 
    
 
     #listen h1 {
-        font-size: 45px;
-        line-height: 68px;
+        font-size: 35px;
+        line-height: 38px;
         color: #1ed760;
-        /* text-align: left; */
+        text-align: center;
         font-family: spotify-circular, Helvetica, Arial, sans-serif;
         letter-spacing: 2px;
     }
     #listen{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         gap: 1%;
+        margin-top: 30%;
     }
     #every{
         margin-left: 0;
