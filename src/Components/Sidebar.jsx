@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/Sidebar.css";
+import "../Style/Sidebar.css";  
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
@@ -21,8 +21,10 @@ function Sidebar() {
     <div className="sidebar">
       <img
         className="sidebar__logo"
-        src="https://music-b26f.kxcdn.com/wp-content/uploads/2017/06/635963274692858859903160895_spotify-logo-horizontal-black.jpg"
+        src="https://s22.q4cdn.com/540910603/files/design/Spotify_Logo_White.png"
         alt="Spotify logo"
+        width="131px"
+        height="39px"
       />
       <div>
         <div className="sidebarOption" onClick={SetHomepage}>

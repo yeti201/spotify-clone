@@ -12,9 +12,13 @@ function App() {
   const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
-    const hash = getTokenFromUrl();
-    window.location.hash = "";
-    const _token = hash.access_token;
+    let _token = localStorage.getItem("token");
+    if (_token === "undefined") {
+      const hash = getTokenFromUrl();
+      window.location.hash = "";
+      _token = hash.access_token;
+      localStorage.setItem("token", _token);
+    }
     if (_token) {
       dispatch({
         type: "SET_TOKEN",
@@ -41,7 +45,7 @@ function App() {
         });
       });
       spotify.getNewReleases({ limit: 5 }).then((data) => {
-        console.log(data);
+        console.log("data" , data);
       });
       spotify.getPlaylist("37i9dQZF1E34Ucml4HHx1w").then((playlist) => {
         dispatch({

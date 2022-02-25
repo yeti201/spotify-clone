@@ -1,6 +1,6 @@
 .body {
   height: 100vh;
-  flex: 0.8;
+  flex: 10;
   color: white;
   padding: 30px;
   background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
@@ -46,6 +46,14 @@
   transition: 100ms transform ease-in;
   transform: scale(1.08);
 }
+
+.body__songs::-webkit-scrollbar{
+  display: none;
+} 
+
 .body__songs {
   margin: 20px -30px;
+  height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 60px;
 }
