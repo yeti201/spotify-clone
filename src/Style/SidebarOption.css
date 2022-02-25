@@ -5,7 +5,6 @@
   height: 35px;
   cursor: pointer;
   transition: 200ms color ease-in;
-
 }
 .sidebarOption:hover {
   color: white;
@@ -14,7 +13,10 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.sidebarOption  p {
+.sidebarOption p {
   margin-left: 20px;
   font-size: 14px;
+}
+.active {
+  color: white;
 }

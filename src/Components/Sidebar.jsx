@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/Sidebar.css";  
+import "../Style/Sidebar.css";
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
@@ -10,7 +10,8 @@ function Sidebar() {
   const [{ playlists }, dispatch] = useDataLayerValue();
 
   const SetHomepage = () => {
-    console.log("yes");
+    let current = document.getElementsByClassName("option");
+    current[0].className = current[0].className.replace("active", "");
     dispatch({
       type: "SET_PAGE",
       Page: "Home",
@@ -27,14 +28,14 @@ function Sidebar() {
         height="39px"
       />
       <div>
-        <div className="sidebarOption" onClick={SetHomepage}>
+        <div className="sidebarOption option active" onClick={SetHomepage}>
           <HomeIcon className="sidebarOption__icon" />
           <span>Home</span>
         </div>
-        <div className="sidebarOption" onClick={SetHomepage}>
+        <div className="sidebarOption option" onClick={SetHomepage}>
           <SearchIcon className="sidebarOption__icon" /> <span>Search</span>
         </div>
-        <div className="sidebarOption"  onClick={SetHomepage}>
+        <div className="sidebarOption option" onClick={SetHomepage}>
           <LibraryMusic className="sidebarOption__icon" />
           <span>Your Library</span>
         </div>
@@ -42,15 +43,15 @@ function Sidebar() {
       <br />
       <strong className="sidebar__title">PLAYLISTS</strong>
       <hr />
-      <div className="playlist_side" id="playlist_side"> 
+      <div className="playlist_side option" id="playlist_side">
         {playlists?.items?.map((playlist) => (
-        <SidebarOption
-          title={playlist.name}
-          key={playlist.id}
-          getP={playlist}
-        />
-      ))}</div>
-     
+          <SidebarOption
+            title={playlist.name}
+            key={playlist.id}
+            getP={playlist}
+          />
+        ))}
+      </div>
     </div>
   );
 }

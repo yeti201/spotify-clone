@@ -25,9 +25,16 @@
   font-weight: bold;
   list-style-type: none;
 }
+
 .navbar ul li a {
   text-decoration: none;
   color: white;
+}
+.navbar ul li a:hover {
+  color: #1ed760;
+}
+.navbar ul li:hover {
+  color: #1ed760;
 }
 
 #checkbox {
