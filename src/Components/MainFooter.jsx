@@ -38,7 +38,9 @@ export const MainFooter = () => {
           <li>Free Mobile App</li>
         </div>
         <div id="links">
-          <img src="https://img.icons8.com/color/48/000000/facebook-circled--v1.png" />
+          <div><i className='bx bxl-instagram'></i></div>
+          <div><i className='bx bxl-twitter' ></i></div>
+          <div><i className='bx bxl-facebook'></i></div>
         </div>
       </div>
 
