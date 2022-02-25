@@ -12,7 +12,7 @@ function App() {
   const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
-    let _token = localStorage.getItem("token");
+    let _token = localStorage.getItem("token") || "undefined";
     if (_token === "undefined") {
       const hash = getTokenFromUrl();
       window.location.hash = "";
@@ -45,7 +45,7 @@ function App() {
         });
       });
       spotify.getNewReleases({ limit: 5 }).then((data) => {
-        console.log("data" , data);
+        console.log("data", data);
       });
       spotify.getPlaylist("37i9dQZF1E34Ucml4HHx1w").then((playlist) => {
         dispatch({
