@@ -1,10 +1,11 @@
 .body {
-  height: 100vh;
+  height: 95vh;
   flex: 10;
   color: white;
   padding: 30px;
-  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+  background: linear-gradient(to bottom, #052c37, #004161, #005490, #0064c0, #126feb);
   overflow-y: overlay;
+  
 }
 .body::-webkit-scrollbar {
   display: none;
@@ -25,7 +26,7 @@
   font-size: 14px;
 }
 .body__info > img {
-  height: 20vw;
+  height: 10vw;
   margin: 0 20px;
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
@@ -37,14 +38,16 @@
   margin-right: 20px;
 }
 .body__shuffle {
-  font-size: 80px !important;
+  font-size: 60px !important;
   margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .body__shuffle:hover {
   transition: 100ms transform ease-in;
   transform: scale(1.08);
+  color: #1ed760;
 }
 
 .body__songs::-webkit-scrollbar{
@@ -56,4 +59,5 @@
   height: 400px;
   overflow-y: scroll;
   margin-bottom: 60px;
+  background-color: rgba(19, 18, 18, 0.7)
 }
