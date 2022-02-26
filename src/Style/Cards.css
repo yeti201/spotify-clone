@@ -8,10 +8,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 1vw;
+  row-gap: 0.5vw;
 }
 
 .display_card {
-  width: 13vw;
+  width: 10vw;
   background-color: #121212;
   padding: 1.5vw;
   box-sizing: border-box;
@@ -33,7 +34,7 @@
 }
 
 .display_card img {
-  width: 10vw;
+  width: 7vw;
   border-radius: 0.5vw;
 }
 .display_card h5 {
