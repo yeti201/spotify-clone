@@ -1,3 +1,66 @@
+---
+# Spotify Reacr Clone
+---
+
+# Welcome 👋
+
+---
+
+## About this project: 🙌
+> This is a team project, built by us in the Construct Week - Unit 5 at Masai School.
+
+
+---
+## Our Team Members ❤️
+
+- **[Yatharth Verma](https://github.com/yeti201)**
+- **[Chamarthi Vamsi](https://github.com/chamarthivamsidev)**
+- **[Vaman Ganbote](https://github.com/Vaman93)**
+- **[Hemant Jayas](https://github.com/hemantjayas)**
+- **[Aniket Paygude](https://github.com/ani9145)**
+
+---
+
+### Pages & Features 👇
+
+- `Home Page`: Nav Bar, Home page, Footer and Login Options.
+- `Sign-Up & Sign-In`: Spotify Authentication for login & SignUp.
+- `Sign-In with OTP Page`: User authentication to check whether user phone number exists in the database.
+- `Player Home`: Shows your recently played, Top albums & playlists.
+- `Playlist`: Shows the card and a list of songs on playlist.
+- `Footer`: Has play pause controls for songs.
+
+---
+
+### How To Use ✅
+
+First you have to have to go to the `Home Page`. There you have to click on account to get a pop window where there is sign-up using mobile number. You'll get an OTP enter that OTP for validation and you'll be logged in. There you can explore the home page or go to the women's section to browse products. The products can be sorted according to color,  category & discount. Click on any product to go to its product page there you can add it bag by clicking on the add to bag button. You can add multiple items to the cart. Then click on cart to view the cart which is a pop-up slider. There coupouns can applied or items can be deleted. To proceed to checkout click on `Proceed to Buy` button on the top of cart which will redirect you to address page where address details can be added. After clicking on proceed to buy we get redirected to `Payment` page where card details can be added and buying process can be completed.
+
+---
+
+### Tech Stack Used 🔧
+- `React`
+- `HTML`
+- `CSS`
+- `JavaScript`
+- `Spotify Web API`
+
+---
+
+### Screenshots :camera:
+
+---
+
+![landing](https://user-images.githubusercontent.com/54769381/155874337-25f35169-8850-4709-b386-aec46da7f868.png)
+![spotify 1](https://user-images.githubusercontent.com/54769381/155874335-5d575b16-7401-4429-a072-5766e3c9e6bd.png)
+![spotify 2](https://user-images.githubusercontent.com/54769381/155874336-d7fb38c6-9678-4d15-ad05-3e959a5d4f64.png)
+![spot mob](https://user-images.githubusercontent.com/54769381/155874338-747373c8-4f6b-48a7-8e09-ceb1e49eaf72.png)
+
+
+---
+## REACT APP
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +131,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
