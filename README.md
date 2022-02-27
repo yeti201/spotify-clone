@@ -1,5 +1,5 @@
 ---
-# Spotify Reacr Clone
+# Spotify React Clone
 ---
 
 # Welcome 👋
@@ -34,7 +34,7 @@
 
 ### How To Use ✅
 
-First you have to have to go to the `Home Page`. There you have to click on account to get a pop window where there is sign-up using mobile number. You'll get an OTP enter that OTP for validation and you'll be logged in. There you can explore the home page or go to the women's section to browse products. The products can be sorted according to color,  category & discount. Click on any product to go to its product page there you can add it bag by clicking on the add to bag button. You can add multiple items to the cart. Then click on cart to view the cart which is a pop-up slider. There coupouns can applied or items can be deleted. To proceed to checkout click on `Proceed to Buy` button on the top of cart which will redirect you to address page where address details can be added. After clicking on proceed to buy we get redirected to `Payment` page where card details can be added and buying process can be completed.
+Login from the home page it will redirect you to the login prompt of spotify use credentials to log in. On the Player home page after logging in you can see recently played songs and your playlists on the sidebar. Clicking on recently played songs will load them in the player on the footer. Clicking on playlist will bring it to the main section. From there you can select songs to load into the player. Spotify only allows 30 secs of previews of songs for free. To use it from our link you will need to request access so feel free to ask.
 
 ---
 
