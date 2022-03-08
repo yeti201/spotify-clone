@@ -100,7 +100,7 @@
 }
 #last > div {
   display: flex;
-  width: 27%;
+  width: 26%;
   justify-content: space-around;
   gap: 0.5%;
 }
