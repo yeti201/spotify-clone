@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Style/Sidebar.css";
+import spotifyLogo from "../images/spotifyLogo.png"
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
@@ -25,7 +26,7 @@ function Sidebar() {
     <div className="sidebar">
       <img
         className="sidebar__logo"
-        src="https://s22.q4cdn.com/540910603/files/design/Spotify_Logo_White.png"
+        src={spotifyLogo}
         alt="Spotify logo"
         width="131px"
         height="39px"

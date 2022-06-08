@@ -2,6 +2,7 @@
 // import insta from "./instagram.png";
 // import fb from "./facebook.png";
 // import twitter from "./twitte.png";
+import spotifyLogo from "../images/spotifyLogo.png"
 import React from "react";
 import "../Style/MainFooter.css";
 
@@ -11,7 +12,7 @@ export const MainFooter = () => {
       <div className="flexbox">
         <div id="spotify">
           <img
-            src="https://s22.q4cdn.com/540910603/files/design/Spotify_Logo_White.png"
+            src={spotifyLogo}
             alt=""
           />
         </div>

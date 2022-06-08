@@ -1,4 +1,5 @@
 // import img from "./spotify.png";
+import spotifyLogo from "../images/spotifyLogo.png"
 import React from "react";
 import "../Style/MainNavbar.css";
 
@@ -7,7 +8,7 @@ export const MainNavbar = ({ url }) => {
     <div className="navbar">
       <div className="logo">
         <img
-          src="https://s22.q4cdn.com/540910603/files/design/Spotify_Logo_White.png"
+          src={spotifyLogo}
           alt=""
         />
       </div>
